@@ -1,0 +1,1 @@
+import{defineConfig}from'vite';export default defineConfig({server:{proxy:Object.fromEntries(['/auth','/accounts','/expenses','/budgets','/summary'].map(p=>[p,'http://localhost:8080']))}});
